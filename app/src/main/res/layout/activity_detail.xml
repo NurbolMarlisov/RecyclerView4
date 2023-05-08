@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/detail_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#E3AF12"
+    tools:context=".DetailActivity">
+
+    <ImageView
+        android:id="@+id/imageView_flower"
+        android:layout_width="200dp"
+        android:layout_height="300dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/flower_name"
+        android:layout_width="100dp"
+        android:layout_height="120dp"
+        android:layout_below="@+id/imageView_flower"
+        android:text="Red Rose"
+        android:textSize="16dp"
+        android:gravity="center"
+       android:background="@color/purple_200"
+        android:textStyle="bold"
+        android:paddingTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView_flower"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/flower_color"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/flower_name"
+        android:gravity="center"
+        android:background="@color/white"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="200dp"
+        android:text="Red"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.456"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_flower" />
+
+    <TextView
+        android:id="@+id/flower_sum"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/flower_color"
+        android:background="@color/purple_700"
+        android:gravity="center"
+        android:text="300som"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/flower_color"
+        app:layout_constraintStart_toStartOf="@+id/flower_color"
+        app:layout_constraintTop_toBottomOf="@+id/flower_color" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
